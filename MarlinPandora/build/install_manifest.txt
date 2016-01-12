@@ -1,0 +1,3 @@
+/usera/sg568/ilcsoft_v01_17_07/DESYCollaboration/MarlinPandora/lib/libMarlinPandora.so.02.02.00
+/usera/sg568/ilcsoft_v01_17_07/DESYCollaboration/MarlinPandora/lib/libMarlinPandora.so.02.02
+/usera/sg568/ilcsoft_v01_17_07/DESYCollaboration/MarlinPandora/lib/libMarlinPandora.so
