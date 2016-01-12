@@ -1,0 +1,35 @@
+<!-- Pandora settings xml file -->
+
+<pandora>
+    <!-- GLOBAL SETTINGS -->
+    <IsMonitoringEnabled>true</IsMonitoringEnabled>
+    <ShouldDisplayAlgorithmInfo>false</ShouldDisplayAlgorithmInfo>
+    <ShouldCollapseMCParticlesToPfoTarget>true</ShouldCollapseMCParticlesToPfoTarget>
+
+    <!-- PLUGIN SETTINGS -->
+    <!--HadronicEnergyCorrectionPlugins>CleanClusters ScaleHotHadrons</HadronicEnergyCorrectionPlugins-->
+    <HadronicEnergyCorrectionPlugins>EnergyCorrectionSC</HadronicEnergyCorrectionPlugins>
+
+    <EnergyCorrectionSC>
+       <SCEnergyConstants> 2.38158 -0.0487677 0.000729545 -0.0213157 -0.000301521 -0.0000107939 0.388451 0.45298 -0.0811392 </SCEnergyConstants> <!--constants defined from standard neutral hadron files-->
+    </EnergyCorrectionSC>
+
+    <EmShowerPlugin>LCEmShowerId</EmShowerPlugin>
+    <PhotonPlugin>LCPhotonId</PhotonPlugin>
+    <ElectronPlugin>LCElectronId</ElectronPlugin>
+    <MuonPlugin>LCMuonId</MuonPlugin>
+
+    <!-- ALGORITHM SETTINGS -->
+
+    <algorithm type = "PerfectParticleFlow">
+        <OutputPfoListName>PerfectPfos</OutputPfoListName>
+        <OutputClusterListName>PerfectPfoClusters</OutputClusterListName>
+    </algorithm>
+
+    <algorithm type = "CellEnergyAlgorithm">
+        <RootFileName>CELLENERGYALGORITHMROOTFILE_XXXX</RootFileName>
+    </algorithm>
+
+    <!--algorithm type = "DumpPfosMonitoring"/-->
+    <!--algorithm type = "VisualMonitoring"/-->
+</pandora>
